@@ -1,28 +1,62 @@
 # 🎰 Unity Slot Game Assignment
 
-A 2D slot machine game developed in Unity as a game development assignment.
+A 2D slot machine game developed in Unity as part of a game development assignment.
+
+The project focuses on implementing core slot-machine gameplay, randomized reel outcomes, coin management, UI feedback, smooth reel animations, and a browser-playable WebGL build.
+
+---
 
 ## 🎮 Play Online
 
-**[▶ Play the WebGL Build](https://asheedeliyangod.github.io/Unity-Slot-Game-Assignment/)**
+### ▶️ [Play the WebGL Build](https://asheedeliyangod.github.io/Unity-Slot-Game-Assignment/)
 
-The game is playable directly in a web browser using Unity WebGL.
+The game can be played directly in a modern web browser without installing Unity.
 
-## 🕹️ Features
+---
+
+## ✨ Features
 
 - 🎰 3-reel slot machine
+- 🎲 Randomized reel outcomes
 - 🪙 Coin-based gameplay
-- 🎯 Winning combinations
+- 💰 Coin balance management
+- 🎯 Winning combination detection
+- 🏆 Win/result feedback
+- 🎞️ Smooth reel spinning animations
 - 🎨 Pixel-art casino-style visuals
-- 🔊 Game feedback and effects
-- 🖥️ WebGL browser build
-- 📱 Browser-based gameplay
+- ✨ Animated decorative neon elements
+- 🖥️ Unity WebGL build
+- 🌐 Browser-based gameplay
+- 📱 WebGL-compatible browser experience
 
-## 🎮 Controls
+---
 
-- **Spin:** Click the spin button
-- **Mouse:** Used for interacting with the game UI
-- **Touch:** Supported in compatible mobile browsers
+## 🎯 Gameplay
+
+The player starts with a configurable number of coins and can use the Spin button to play the slot machine.
+
+Each spin generates a randomized combination of symbols across the three reels.
+
+The game evaluates the resulting combination and displays the appropriate result to the player.
+
+Winning spins provide a coin reward, while each spin consumes the configured spin cost.
+
+The interface provides visual feedback for the result and updates the player's coin balance accordingly.
+
+---
+
+## 🕹️ Controls
+
+### Desktop
+
+- **Spin Button** — Start a slot-machine spin
+- **Mouse** — Interact with the game UI
+
+### Web Browser
+
+The game is designed to run directly in a modern WebGL-compatible browser.
+
+---
 
 ## 🛠️ Built With
 
@@ -30,16 +64,96 @@ The game is playable directly in a web browser using Unity WebGL.
 - **C#**
 - **Universal Render Pipeline (URP)**
 - **Unity WebGL**
-- **Git / GitHub**
+- **Git**
+- **GitHub**
+
+---
+
+## ⚙️ Implementation
+
+The project was developed with a focus on clean gameplay logic and separation of responsibilities.
+
+Key implementation areas include:
+
+- Slot-machine controller and game flow
+- Reel spinning and animation handling
+- Randomized symbol selection
+- Winning-condition evaluation
+- Coin management
+- Spin-cost handling
+- Reward handling
+- Result UI feedback
+- Animated UI/decorative elements
+- WebGL deployment
+
+The project uses C# scripts and Unity UI components to manage gameplay and player interaction.
+
+---
+
+## 💰 Coin System
+
+The game includes a dedicated coin-management system.
+
+The coin system supports:
+
+- Starting coin balance
+- Adding coins
+- Removing coins
+- Checking whether the player has enough coins
+- Updating the coin UI
+- Rewarding the player after successful outcomes
+
+The system prevents a spin from consuming coins when the player does not have enough balance.
+
+---
+
+## 🎰 Slot Machine Logic
+
+The slot machine uses randomized outcomes to determine the symbols displayed on the reels.
+
+After the reels finish spinning, the resulting symbols are evaluated against the configured winning conditions.
+
+The result is then presented through the game's UI, providing feedback to the player.
+
+---
+
+## 🎨 Visual Design
+
+The game uses a pixel-art-inspired casino aesthetic.
+
+Additional animated decorative elements were added around the slot machine to make the scene feel more lively without interfering with the core gameplay.
+
+The decorative elements are purely visual and do not affect the underlying slot-machine mechanics.
+
+---
 
 ## 📂 Project Structure
 
 ```text
-UnitySlotGame/
+Unity-Slot-Game-Assignment/
+│
 ├── Assets/
-├── Packages/
-├── ProjectSettings/
+│   ├── Animations/
+│   ├── Prefabs/
+│   ├── Scripts/
+│   ├── UI/
+│   ├── Sounds/
+│   └── ...
+│
 ├── Build/
+│   ├── Unity.data
+│   ├── Unity.framework.js
+│   ├── Unity.loader.js
+│   └── Unity.wasm
+│
+├── Packages/
+│
+├── ProjectSettings/
+│
 ├── TemplateData/
+│
 ├── index.html
+│
+├── .gitignore
+│
 └── README.md
