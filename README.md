@@ -2,7 +2,7 @@
 
 A 2D slot machine game developed in Unity as part of a game development assignment.
 
-The project focuses on implementing core slot-machine gameplay, randomized reel outcomes, coin management, UI feedback, smooth reel animations, and a browser-playable WebGL build.
+The project focuses on implementing core slot-machine gameplay, randomized reel outcomes, coin management, UI feedback, smooth reel animations, visual polish, and a browser-playable WebGL build.
 
 ---
 
@@ -10,7 +10,7 @@ The project focuses on implementing core slot-machine gameplay, randomized reel 
 
 ### ▶️ [Play the WebGL Build](https://asheedeliyangod.github.io/Unity-Slot-Game-Assignment/)
 
-The game can be played directly in a modern web browser without installing Unity.
+The game can be played directly in a modern WebGL-compatible browser without installing Unity.
 
 ---
 
@@ -21,13 +21,12 @@ The game can be played directly in a modern web browser without installing Unity
 - 🪙 Coin-based gameplay
 - 💰 Coin balance management
 - 🎯 Winning combination detection
-- 🏆 Win/result feedback
+- 🏆 Win and result feedback
 - 🎞️ Smooth reel spinning animations
-- 🎨 Pixel-art casino-style visuals
+- 🎨 Pixel-art-inspired casino visuals
 - ✨ Animated decorative neon elements
 - 🖥️ Unity WebGL build
 - 🌐 Browser-based gameplay
-- 📱 WebGL-compatible browser experience
 
 ---
 
@@ -37,11 +36,11 @@ The player starts with a configurable number of coins and can use the Spin butto
 
 Each spin generates a randomized combination of symbols across the three reels.
 
-The game evaluates the resulting combination and displays the appropriate result to the player.
+After the reels finish spinning, the resulting combination is evaluated against the configured winning conditions.
 
-Winning spins provide a coin reward, while each spin consumes the configured spin cost.
+Winning combinations provide a coin reward, while each spin consumes the configured spin cost.
 
-The interface provides visual feedback for the result and updates the player's coin balance accordingly.
+The game provides visual feedback for the result and updates the player's coin balance accordingly.
 
 ---
 
@@ -75,7 +74,7 @@ The project was developed with a focus on clean gameplay logic and separation of
 
 Key implementation areas include:
 
-- Slot-machine controller and game flow
+- Slot-machine game flow
 - Reel spinning and animation handling
 - Randomized symbol selection
 - Winning-condition evaluation
@@ -83,10 +82,10 @@ Key implementation areas include:
 - Spin-cost handling
 - Reward handling
 - Result UI feedback
-- Animated UI/decorative elements
+- Animated UI and decorative elements
 - WebGL deployment
 
-The project uses C# scripts and Unity UI components to manage gameplay and player interaction.
+The gameplay systems are implemented using C# scripts and Unity UI components.
 
 ---
 
@@ -96,7 +95,7 @@ The game includes a dedicated coin-management system.
 
 The coin system supports:
 
-- Starting coin balance
+- Configurable starting coin balance
 - Adding coins
 - Removing coins
 - Checking whether the player has enough coins
@@ -113,7 +112,7 @@ The slot machine uses randomized outcomes to determine the symbols displayed on 
 
 After the reels finish spinning, the resulting symbols are evaluated against the configured winning conditions.
 
-The result is then presented through the game's UI, providing feedback to the player.
+The result is then presented through the game's UI, providing clear feedback to the player.
 
 ---
 
@@ -121,9 +120,9 @@ The result is then presented through the game's UI, providing feedback to the pl
 
 The game uses a pixel-art-inspired casino aesthetic.
 
-Additional animated decorative elements were added around the slot machine to make the scene feel more lively without interfering with the core gameplay.
+Animated decorative neon elements were added around the slot machine to make the scene feel more lively and visually engaging without affecting the core gameplay mechanics.
 
-The decorative elements are purely visual and do not affect the underlying slot-machine mechanics.
+The decorative elements are purely visual and do not affect the underlying slot-machine logic.
 
 ---
 
